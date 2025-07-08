@@ -101,8 +101,8 @@ clf_models = dict(
     knn = KNeighborsClassifier(),
     dt = DecisionTreeClassifier(),
     rf = RandomForestClassifier(),
-    lgbm = LGBMClassifier(),
-    xgb = XGBClassifier()
+    # lgbm = LGBMClassifier(),
+    # xgb = XGBClassifier()
 )
 def apply_classification(data_frame,features,target):
     # Split data into train and test
