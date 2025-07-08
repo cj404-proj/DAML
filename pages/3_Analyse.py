@@ -125,7 +125,7 @@ if file:
     
     elif selected == "Free-Analyze":
         st.header("Analyze freely")
-        pyg.walk(df=df,env="Streamlit")
+        pyg.walk(dataset=df,env="Streamlit")
         
 else:
     st.warning("Upload the file")
