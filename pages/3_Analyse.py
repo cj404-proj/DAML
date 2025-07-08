@@ -119,7 +119,7 @@ if file:
     
     elif selected == "Correlation":
         st.header("Correlation")
-        corr = df.corr()
+        corr = df.select_dtypes(include=['number']).corr()
         st.write(corr)
         st.plotly_chart(px.imshow(corr,text_auto=True,aspect="auto"),use_container_width=True)
     
